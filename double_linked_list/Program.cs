@@ -89,13 +89,10 @@ namespace double_linked_list
         {
             for (previous = current =START; current != null && 
             rollNo != current.noMhs; previous = current,
-            current = current.next)
-            {
-                return (current != null);
-            }
-
-            
+            current = current.next) { }
+            return (current != null);
         }
+
     }
 }
 
