@@ -127,7 +127,20 @@ namespace double_linked_list
                 return false;
         }
 
+        public void ascending()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the asceding order of" + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.WriteLine(currentNode.noMhs + "" + currentNode.name + "\n");
+            }
+        }
 
+        
     }
 }
 
